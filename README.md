@@ -1,5 +1,4 @@
-# gatsby-starter-documentation
-Starter for building documentation site with GatsbyJS
+# Geographer documentation
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-documentation-site https://github.com/gatsbyjs/gatsby-starter-documentation`
+API documentation for official packages of (Geographer)[https://github.com/MenaraSolutions/geographer]
+
