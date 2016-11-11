@@ -5,9 +5,6 @@ import find from 'lodash/find'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 
-import typography from 'utils/typography'
-const { rhythm } = typography
-
 module.exports = React.createClass({
   propTypes () {
     return {

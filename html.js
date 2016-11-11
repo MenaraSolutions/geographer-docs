@@ -1,9 +1,6 @@
 import React from 'react'
 import DocumentTitle from 'react-document-title'
-
 import { prefixLink } from 'gatsby-helpers'
-import { TypographyStyle, GoogleFont } from 'react-typography'
-import typography from './utils/typography'
 import { colors } from 'utils/colors'
 
 const BUILD_TIME = new Date().getTime()
@@ -30,9 +27,9 @@ module.exports = React.createClass({
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
           <title>{title}</title>
-          <TypographyStyle typography={typography} />
-          <GoogleFont typography={typography} />
           {css}
           <style
             dangerouslySetInnerHTML={{
