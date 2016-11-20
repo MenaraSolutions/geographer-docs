@@ -23,6 +23,7 @@ module.exports = React.createClass({
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="description" content="Geographer is an open-source library that works with geopolitical data." />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
@@ -31,36 +32,8 @@ module.exports = React.createClass({
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
           <title>{title}</title>
           {css}
-          <style
-            dangerouslySetInnerHTML={{
-              __html:
-                `
-                  a {
-                    color: ${colors.bg};
-                  }
-                  .ball-0 {
-                    background-image: url(${prefixLink('/docs/some-react-code/0.jpg')});
-                  }
-                  .ball-1 {
-                    background-image: url(${prefixLink('/docs/some-react-code/1.jpg')});
-                  }
-                  .ball-2 {
-                    background-image: url(${prefixLink('/docs/some-react-code/2.jpg')});
-                  }
-                  .ball-3 {
-                    background-image: url(${prefixLink('/docs/some-react-code/3.jpg')});
-                  }
-                  .ball-4 {
-                    background-image: url(${prefixLink('/docs/some-react-code/4.jpg')});
-                  }
-                  .ball-5 {
-                    background-image: url(${prefixLink('/docs/some-react-code/5.jpg')});
-                  }
-                `,
-            }}
-          />
         </head>
-        <body>
+        <body className="page-blog-new-bike">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />
           <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
         </body>

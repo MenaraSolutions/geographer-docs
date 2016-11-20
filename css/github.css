@@ -3,6 +3,11 @@
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
+pre {
+  background: rgb(230, 250, 248);
+  padding: 25px;
+  color: black;
+}
 .hljs-comment,
 .hljs-quote {
   color: #998;
