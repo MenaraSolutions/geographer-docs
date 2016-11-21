@@ -52,6 +52,40 @@ const IndexPage = React.createClass({
                             </div>
                         </section>
 
+                        <section className="get-in-touch">
+                            <div className="row">
+                                <div className="col s12">
+                                    <h2>Who should use this</h2>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col s12 l12">
+                                    <p className="flow-text">
+                                        Any web application that needs to display country, state or city lists and/or names may benefit from Geographer.
+                                    </p>
+                                    <p>
+                                        Imagine you want to display <i>"John logged in 5 seconds ago from Venice"</i> in Spanish. With Geographer this is as simple as:
+                                    </p>
+                                    <pre className="php-body">
+                                        <code className="php">
+                                            <span className="hljs-comment">// In this example we are using Venice's Geonames code to resolve it</span>
+                                            <p>$venice = City::build(<span className="hljs-string">3164603</span>);</p>
+                                            <p>echo 'John logged in 5 seconds ago ' . $venice->setLocale(<span className="hljs-string">'es'</span>)->inflict(<span className="hljs-string">'from'</span>)->getName();</p>
+                                        </code>
+                                    </pre>
+                                    <p>
+                                        And now I want to display <i>"Venice is in Italy"</i>:
+                                    </p>
+                                    <pre className="php-body">
+                                        <code className="php">
+                                            <p>echo $venice->inflict(<span className="hljs-string">'default'</span>)->getName() . ' is in ' . $venice->parent()->parent()->getName();</p>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </section>
+
+
                     </div>
                 </div>
                 </div>

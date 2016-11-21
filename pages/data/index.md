@@ -36,3 +36,30 @@ attempt to use a non-existing language – expect an exception.
 | Chinese Mandarin | ✓            | ✓         | ✓           | [geographer-zh](https://github.com/MenaraSolutions/geographer-zh) |
 
 English texts are included in the data package and are used as default metadata. 
+
+### Example of a country entry
+
+```json
+  {
+    "languages": [
+      "it"
+    ],
+    "ids": {
+      "iso_3166_1": [
+        "IT",
+        "ITA",
+        "380"
+      ],
+      "fips": "IT",
+      "geonames": 3175395
+    },
+    "long": {
+      "default": "Italy"
+    },
+    "area": 301230,
+    "currency": "EUR",
+    "phone": "39",
+    "continent": "EU",
+    "population": 60340328
+  }
+```

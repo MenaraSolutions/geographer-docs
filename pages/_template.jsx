@@ -42,16 +42,16 @@ module.exports = React.createClass({
                                     <div className="col s12 l6">
                                         <ul className="hide-on-med-and-down">
                                             <li>
-                                                <Link to='/documentation/'>Documentation</Link>
+                                                <Link activeClassName="current-page" to='/documentation/'>Documentation</Link>
                                             </li>
                                             <li>
-                                                <Link to='/data/'>Data</Link>
+                                                <Link activeClassName="current-page" to='/data/'>Data</Link>
                                             </li>
                                             <li>
-                                                <Link to='/contribute/'>Contribute</Link>
+                                                <Link activeClassName="current-page" to='/contribute/'>Contribute</Link>
                                             </li>
                                             <li>
-                                                <Link to='/contact/'>Contact</Link>
+                                                <Link activeClassName="current-page" to='/contact/'>Contact</Link>
                                             </li>
                                         </ul>
                                         <ul id="slide-out" className="side-nav" style={ menuVisible ? { transform: 'translateX(0px)' } : {} }>

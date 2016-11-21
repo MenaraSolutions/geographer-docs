@@ -31,7 +31,7 @@ const IndexPage = React.createClass({
                                 <div className="row">
                                     <div className="col s12 l2">
                                         <Link to="/documentation/php/" style={{ borderBottom: 'none' }}><img src="php.png" className="responsive-img"/></Link>
-                                        <Link to="/documentation/php/">Official Geographer PHP package</Link>
+                                        <Link to="/documentation/php/">Geographer PHP package</Link>
                                     </div>
                                 </div>
                             </section>
