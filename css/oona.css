@@ -1457,3 +1457,11 @@ footer .new-window {
 .page-contact .input-field .prefix.active {
   color: #fff;
 }
+
+.gh-count {
+  display: inline;
+  border-bottom: none !important;
+}
+.gh-text {
+  display: none;
+}

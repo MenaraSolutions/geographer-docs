@@ -1,4 +1,4 @@
-siteTitle="Geographer"
+siteTitle = "Geographer"
 baseColor = "#884499"
 linkPrefix = "/"
 docPages = [

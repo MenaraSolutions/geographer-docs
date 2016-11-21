@@ -29,10 +29,8 @@ module.exports = React.createClass({
             content="width=device-width, initial-scale=1.0"
           />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
           <title>{title}</title>
           {css}
-          <script async defer src="https://buttons.github.io/buttons.js"></script>
         </head>
         <body className="page-blog-new-bike">
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />

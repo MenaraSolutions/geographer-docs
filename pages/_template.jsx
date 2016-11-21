@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 import {colors, activeColors} from 'utils/colors'
-
+import GitHubButton from 'react-github-button';
 import {config} from 'config'
 
 import 'css/materialize.css'
@@ -68,15 +68,10 @@ module.exports = React.createClass({
                                                 <Link to='/contact/' onClick={() => this.setState({menuVisible: !menuVisible})}>Contact</Link>
                                             </li>
                                         </ul>
-                                        <div style={{float: 'left', paddingLeft: '25px', paddingTop: '10px'}}
+                                        <div style={{float: 'left', paddingLeft: '25px' }}
                                              className="hide-on-med-and-down">
-                                            <a className="github-button"
-                                               href="https://github.com/MenaraSolutions/geographer"
-                                               data-icon="octicon-star" data-style="mega"
-                                               data-count-href="/MenaraSolutions/geographer/stargazers"
-                                               data-count-api="/repos/MenaraSolutions/geographer#stargazers_count"
-                                               data-count-aria-label="# stargazers on GitHub"
-                                               aria-label="Star MenaraSolutions/geographer on GitHub">Star</a>
+                                            &#9734;
+                                            <GitHubButton type="stargazers" size="large" style={{float: 'left' }} namespace="MenaraSolutions" repo="geographer" />
                                         </div>
                                     </div>
                                 </div>
