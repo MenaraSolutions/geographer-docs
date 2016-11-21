@@ -2,11 +2,13 @@ siteTitle="Geographer"
 baseColor = "#884499"
 linkPrefix = "/"
 docPages = [
-  "/documentation/",
-  "/documentation/getting-started/",
-  "/documentation/how-to-run/",
-  "/documentation/some-react-code/",
-  "/documentation/the-next-step/",
-  "/documentation/test/",
-  "/documentation/conclusion/",
+  "/documentation/php/",
+  "/documentation/php/getting-started/",
+  "/documentation/php/basic-usage/",
+  "/documentation/php/collections-common-methods/",
+  "/documentation/php/earth/",
+  "/documentation/php/country/",
+  "/documentation/php/state/",
+  "/documentation/php/city/",
+  "/documentation/php/integrations/"
 ]

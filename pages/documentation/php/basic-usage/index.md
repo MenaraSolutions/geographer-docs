@@ -1,18 +1,8 @@
 ---
-title: Getting Started
+title: Basic usage
 ---
 
-It's not hard, you've just got to give it a try!
-
-```javascript
-if (true) {
-  console.log('Yes I can!')
-}
-```
-
-```bash
-$ composer install geographer
-```
+We are trying to keep our API fluent and expressive. Most methods are self explanatory.
 
 ```php
 use MenaraSolutions\Geographer\Earth;
