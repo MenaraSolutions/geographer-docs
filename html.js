@@ -24,12 +24,12 @@ module.exports = React.createClass({
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta name="description" content="Geographer is an open-source library that works with geopolitical data." />
+          <meta property="og:image" content="https://geographer.su/airport.jpg" />
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
           <title>{title}</title>
           {css}
         </head>

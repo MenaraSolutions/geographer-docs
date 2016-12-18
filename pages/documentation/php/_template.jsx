@@ -55,7 +55,7 @@ module.exports = React.createClass({
     })
 
     return (
-      <div className="container">
+        <div className="container">
         <div className="row">
           <div className="col s12 l3" style={{ 'margin-top': '25px' }}>
               <ul
@@ -73,7 +73,7 @@ module.exports = React.createClass({
           </div>
 
         </div>
-      </div>
+        </div>
     )
   },
 })
