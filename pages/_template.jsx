@@ -37,8 +37,11 @@ const languages = [
     }
 ]
 
-module.exports = React.createClass({
+export const getUrl = (url, language) => {
+    return language == 'en' ? url : '/' + language + url
+}
 
+module.exports = React.createClass({
     propTypes () {
         return {
             children: React.PropTypes.object,
@@ -54,6 +57,7 @@ module.exports = React.createClass({
     render () {
         const { menuVisible } = this.state || false
         const language = startsWith(this.props.location.pathname, '/ru') ? 'ru' : 'en'
+
         return (
             <div>
                 <div className="navbar-fixed">
@@ -63,7 +67,7 @@ module.exports = React.createClass({
                                 <div className="row">
 
                                     <div className="col s12 l6">
-                                        <Link to="/">Geographer</Link>
+                                        <Link to={getUrl('/', language)}>Geographer</Link>
                                         <span className="right show-on-medium-and-down hide-on-large-only">
                                             <a id="sidenav-toggle" href="#" onClick={() => { this.setState({menuVisible: !menuVisible})} } className="sidenav-toggle">Menu</a>
                                         </span>
@@ -72,30 +76,30 @@ module.exports = React.createClass({
                                     <div className="col s12 l6">
                                         <ul className="hide-on-med-and-down">
                                             <li>
-                                                <Link activeClassName="current-page" to='/documentation/'>{menu[language][0]}</Link>
+                                                <Link activeClassName="current-page" to={getUrl('/documentation/', language)}>{menu[language][0]}</Link>
                                             </li>
                                             <li>
-                                                <Link activeClassName="current-page" to='/data/'>{menu[language][1]}</Link>
+                                                <Link activeClassName="current-page" to={getUrl('/data/', language)}>{menu[language][1]}</Link>
                                             </li>
                                             <li>
-                                                <Link activeClassName="current-page" to='/contribute/'>{menu[language][2]}</Link>
+                                                <Link activeClassName="current-page" to={getUrl('/contribute/', language)}>{menu[language][2]}</Link>
                                             </li>
                                             <li>
-                                                <Link activeClassName="current-page" to='/contact/'>{menu[language][3]}</Link>
+                                                <Link activeClassName="current-page" to={getUrl('/contact/', language)}>{menu[language][3]}</Link>
                                             </li>
                                         </ul>
                                         <ul id="slide-out" className="side-nav" style={ menuVisible ? { transform: 'translateX(0px)' } : {} }>
                                             <li>
-                                                <Link to='/documentation/' onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][0]}</Link>
+                                                <Link to={getUrl('/documentation/', language)} onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][0]}</Link>
                                             </li>
                                             <li>
-                                                <Link to='/data/' onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][1]}</Link>
+                                                <Link to={getUrl('/data/', language)} onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][1]}</Link>
                                             </li>
                                             <li>
-                                                <Link to='/contribute/' onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][2]}</Link>
+                                                <Link to={getUrl('/contribute/', language)} onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][2]}</Link>
                                             </li>
                                             <li>
-                                                <Link to='/contact/' onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][3]}</Link>
+                                                <Link to={getUrl('/contact/', language)} onClick={() => this.setState({menuVisible: !menuVisible})}>{menu[language][3]}</Link>
                                             </li>
                                         </ul>
                                         <div style={{float: 'left', paddingLeft: '25px' }}
