@@ -10,5 +10,8 @@ docPages = [
   "/documentation/php/country/",
   "/documentation/php/state/",
   "/documentation/php/city/",
-  "/documentation/php/integrations/"
+  "/documentation/php/integrations/",
+  "/documentation/js/",
+  "/documentation/js/getting-started/",
+  "/documentation/js/basic-usage/",
 ]

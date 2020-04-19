@@ -139,7 +139,7 @@ module.exports = React.createClass({
                                 <a href="https://www.linkedin.com/company/menara-solutions">LinkedIn</a>
                             </div>
                             <div className="col s12 l3">
-                                &copy; 2016 Menara Solutions. Powered by <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
+                                &copy; 2016-2020 Denis Mysenko. Powered by <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
                             </div>
                         </div>
                     </div>

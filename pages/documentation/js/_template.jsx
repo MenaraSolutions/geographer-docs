@@ -18,8 +18,7 @@ module.exports = React.createClass({
   },
 
   render () {
-    const childPages = config.docPages.filter(p => p.match(/^\/documentation\/php/)).map((p) => {
-        console.log(this.props.route.pages)
+    const childPages = config.docPages.filter(p => p.match(/^\/documentation\/js/)).map((p) => {
       const page = find(this.props.route.pages, (_p) => _p.path === p)
       return {
         title: page.data.title,
