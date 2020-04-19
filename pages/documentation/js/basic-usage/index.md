@@ -4,7 +4,7 @@ title: Basic usage
 
 We are trying to keep our API fluent and expressive. Most methods are self explanatory.
 
-```php
+```js
 const Earth = require('geographer-js')
 
 // Default entry point is our beautiful planet
